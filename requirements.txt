@@ -1,0 +1,25 @@
+# Eshwar AI — Water & Pump Intelligence Copilot
+# REQUIRED: Python 3.10 or 3.11 (NOT 3.14 — tokenizers has no wheel yet)
+# Windows setup:  .\scripts\setup.ps1
+
+# UI
+streamlit>=1.32.0,<2.0.0
+
+# LLM (Gemini)
+google-generativeai>=0.8.0,<1.0.0
+
+# RAG & orchestration
+langchain>=0.3.0,<0.4.0
+langchain-community>=0.3.0,<0.4.0
+langchain-text-splitters>=0.3.0,<0.4.0
+
+# Vector store
+chromadb>=0.5.0,<0.6.0
+
+# Local embeddings (no API key required)
+# Pin tokenizers so pip uses pre-built wheels on 3.10/3.11
+tokenizers>=0.20.0,<0.22.0
+sentence-transformers>=3.0.0,<4.0.0
+
+# Config
+python-dotenv>=1.0.0,<2.0.0

@@ -1,0 +1,1 @@
+# Eshwar AI — shared helpers

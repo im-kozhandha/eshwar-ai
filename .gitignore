@@ -1,0 +1,33 @@
+# Environment & secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Vector DB (regenerated from docs)
+data/chroma_db/*
+!data/chroma_db/.gitkeep
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Logs & test artifacts
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ML / embedding caches (rebuilt on deploy)
+.cache/
+huggingface/
