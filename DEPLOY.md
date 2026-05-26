@@ -48,6 +48,13 @@ Replace `YOUR_USERNAME` and repo name with yours.
 
 Click **Deploy** (first deploy may fail until secrets are set — that’s normal).
 
+### Important: Python version
+
+This project requires **Python 3.10–3.12**. If Streamlit Cloud uses **Python 3.14**, `tokenizers` will fail to build.
+
+- This repo includes `runtime.txt` with `python-3.11.9`
+- In Streamlit Cloud, also check **App settings → Python version** (if shown) and set it to **3.11**
+
 ---
 
 ## Step 3 — Add secrets (required)
